@@ -1,0 +1,16 @@
+
+# load csv file into the variable pop
+library(readr)
+pop <- read_csv("COVID_19_Daily_Counts")
+# display the contents of pop
+pop
+# display only the column named Case Counnt in COVID_19_Daily_Counts
+pop$CASE_COUNT
+# plot the data in the Case Counts column as points
+plot(COVID_19_Daily_Counts$CASE_COUNT)
+# plot the data in the Case Countcolumn as a continuous line (line graph)
+plot(COVID_19_Daily_Counts$DEATH_COUNT, type = "l")
+# same as previous plot, but line is blue
+plot(COVID_19_Daily_Counts$DEATH_COUNT, type = "l", col = "blue")
+# same as previous plot but x axis is labeled by the years (from the data)
+plot(COVID_19_Daily_Counts$DEATH_COUNT, COVID_19_Daily_Counts$CASE_COUNT, type = "l")
