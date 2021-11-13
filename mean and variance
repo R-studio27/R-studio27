@@ -1,0 +1,8 @@
+mean(COVID_19_Daily_Counts$CASE_COUNT)
+# 1501.727
+var(COVID_19_Daily_Counts$CASE_COUNT)
+# 2158497
+mean(COVID_19_Daily_Counts$DEATH_COUNT)
+# 48.04085
+var(COVID_19_Daily_Counts$DEATH_COUNT)
+# 9559.948
